@@ -355,7 +355,7 @@ header span i {
 }
 
 .navbar-default img {
-  width: 60px;
+  width: 80px;
 }
 
 .navbar-default .navbar-nav li.appointment-btn {
@@ -1269,6 +1269,6 @@ label {
 
 @media (min-width: 992px) {
   .col-md-offset-1 {
-    margin-left: 12%;
+    margin-left: 13%;
   }
 }
