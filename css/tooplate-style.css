@@ -432,16 +432,6 @@ header span i {
 
 }
 
-.slider .container {
-  width: 100%;
-}
-
-.slider .owl-dots {
-  position: absolute;
-  top: 575px;
-  width: 100%;
-  justify-content: center;
-}
 
 .owl-theme .owl-dots .owl-dot span {
   width: 8px;
@@ -461,48 +451,29 @@ header span i {
   border-color: transparent;
 }
 
-.slider .caption {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgba(20, 20, 20, 0.2);
-  height: 100%;
-  color: #fff;
-  cursor: e-resize;
-}
-
-.slider .item {
-  background-position: inherit;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-size: cover;
-  height: 650px;
-}
-
-.slider .item-first {
+.homeLanding {
   background-image: url(../images/landing.png);
   background-position: center center;
   background-size: cover;
+  height: 600px;
+  position: relative;
 }
 
-.slider .item-second {
-  background-image: url(../images/slider2.jpg);
+.homeLanding .container {
+  padding: 0;
 }
 
-.slider .item-third {
-  background-image: url(../images/slider3.jpg);
-}
 
 #home .landing-content {
   height: 100%;
   align-items: center;
   display: flex;
+  position: absolute;
 }
 
 #home .landing-content p {
   color: #565656;
-  width: 60%;
+  /* width: 60%; */
   text-align: justify;
 }
 
@@ -553,7 +524,7 @@ header span i {
   training
   -----------------------------------------*/
 #training {
-  padding-block: 50px;
+  padding-block: 60px;
   /* margin-top: 55px; */
 }
 
@@ -1075,10 +1046,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 992px) {
-  .slider .item {
-    background-position: center;
-  }
-
   header {
     padding-bottom: 10px;
   }
@@ -1270,5 +1237,17 @@ label {
 @media (min-width: 992px) {
   .col-md-offset-1 {
     margin-left: 13%;
+  }
+}
+
+@media (min-width:1201px) {
+  #home .landing-content p {
+    width: 66%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  #home .landing-content p {
+    width: 53%;
   }
 }
